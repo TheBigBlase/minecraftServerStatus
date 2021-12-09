@@ -56,7 +56,14 @@ function newActivity(): void{
 			console.error("issue in getPlayerNumber()", error);
 		}
 		if(client.user != null){
-			client.user.setActivity(`${stdout} players online`, {type: 'PLAYING'});
+			if(stdout.includes("0/69")){
+				client.user.setActivity(`nobody is online`, {type: 'PLAYING'});
+			}
+			else if(stdout.includes("1/69")){
+				client.user.setActivity(`${stdout} player online`, {type: 'PLAYING'});
+			}
+
+			else client.user.setActivity(`${stdout} players online`, {type: 'PLAYING'});
 		}
 		else console.log("client was null");
 	});
