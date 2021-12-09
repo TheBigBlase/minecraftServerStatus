@@ -1,5 +1,5 @@
 # Discord bot 
-displays activity of minecraft server running on localhost:25565 (default minecraft port)
+displays activity of minecraft server running on localhost:25565 (default minecraft port) \\
 written in ts, so you gotta compile it before running it. You'll also need a settings.json file : 
 
 ### Instalation 
@@ -19,5 +19,5 @@ npm run start
 ```
 
 ### notes 
-The code is a little spaghetti but hey first time using TS
+The code is a little spaghetti but hey first time using TS\\
 gl & hf

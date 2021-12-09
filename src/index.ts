@@ -33,7 +33,7 @@ client.once("ready", async () => {
   console.log("Bot started");
 	const task = async () => {
 		while(true){
-			await new Promise(r => setTimeout(r, 2000));
+			await new Promise(r => setTimeout(r, 10000));
 			newActivity();
 		}
 	}
